@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="scripts/d3.js"></script>
+		<script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+        <script type="text/javascript" src="scripts/inputData.js"></script> 
+        <script type="text/javascript" src="scripts/mainModules.js"></script> 
+		<link type="text/css" rel="stylesheet" href="style/style.css">
+		<title>Visualization-Assignment</title>
+	</head>
+	
+	<body id="main">
+		<div class="container container-shadow" id="container">
+		</div>
+		<div class="v-barChart-tooltip container-shadow hidden" id="v-barChart-tooltip">
+			<p class="tooltip-title">Year : <span id="year" class="tooltip-value"></span>
+			</p>
+		    <p class="tooltip-title">
+				<span id="bchartValue"></span> : <span id="value" class="tooltip-value"></span>
+			</p>
+		</div>
+		<div class="pieChart-tooltip container-shadow hidden" id="pieChart-tooltip">
+			<p class="tooltip-title">Category : <span id="category" class="tooltip-value"></span>
+			</p>
+		    <p class="tooltip-title">Percentage : <span id="percentage" class="tooltip-value"></span>
+			</p>
+		</div>
+		<script type="text/javascript" src="scripts/renderSVG.js"></script> 
+	</body>
+</html>
+

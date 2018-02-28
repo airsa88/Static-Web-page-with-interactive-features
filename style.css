@@ -1,0 +1,177 @@
+/*
+@Author - Antony
+
+This file contains styles for individual web elements in the web page.
+Required Fonts included as part of package.
+Fonts downloaded from Source: https://www.fontsquirrel.com/fonts/list/
+
+*/
+
+/* Fonts declaration */ 
+@font-face {
+  font-family: LeagueGothic-Regular;
+  src: url("../fonts/LeagueGothic-Regular.otf") format("opentype"); 
+}
+@font-face {
+  font-family: BreeSerif;
+  src: url("../fonts/BreeSerif.otf") format("opentype"); 
+}
+
+/* Body of the webpage */
+body {
+  font-family: 'LeagueGothic-Regular';
+  font-size: 40px;
+  letter-spacing: 0.8px;
+}
+
+/* title page */
+.titlePage-text {
+  font-size: 51px;
+  text-align: center;
+  letter-spacing: 0.55px;
+}
+
+/* small sized text other than the default body text */
+.small-text {
+  font-family: 'BreeSerif';
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 0.8px;
+}
+
+/* years in bar chart */
+.barChart-year-text {
+  font-size: 22px;
+  letter-spacing: 0px;
+}
+
+/* star notes after diagrams and charts */
+.star-text {
+  font-family: 'BreeSerif';
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+}
+
+/* Reference texts at the end of page */
+.legend-text {
+  font-size: 22px;
+  letter-spacing: 0.4px;
+}
+
+/* div contianer */
+.container {
+  background-color: #FAFBFC;
+  width: 850px;
+  height: 4535px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0px;
+}
+
+/* Shadow will be applied for the container */
+.container-shadow {
+  -webkit-box-shadow: -1px 0px 6px 0px  rgba(179,173,179,1);
+  -moz-box-shadow: -1px 0px 6px 0px  rgba(179,173,179,1);
+  box-shadow: -1px 0px 6px 0px rgba(179,173,179,1)
+}
+
+/* pie chart text */
+.pieChart-text {
+  font-family: 'BreeSerif';
+  font-size: 38px;
+  letter-spacing: 1px;
+}
+
+/* fill text in red color */
+.red-text {
+  fill: red;
+}
+
+/* Highlights the text in red color */
+.red-text-highlight {
+  fill: #d1515e;
+}
+
+/* fill text in white color */
+.white-text {
+  fill: white;
+}
+
+/* draw lines */
+.title-line {
+  stroke: black;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+/* bar chart arc separator */
+.barchart-line {
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+
+/* To make container div hidden for defaults */
+.hidden {
+    opacity: 0;
+}
+
+/* pie chart tool tip */
+.pieChart-tooltip {
+    position: absolute;
+    background-color: white;
+    width: auto;
+    height: auto;
+    padding: 5px 15px 5px 15px;
+    border-radius: 8px;
+}
+
+/* Vertical bar chart tool tip */
+.v-barChart-tooltip {
+    position: absolute;
+    background-color: white;
+    width: auto;
+    height: auto;
+    padding: 5px 15px 5px 15px;
+    border-radius: 8px;
+}
+
+.v-barChart-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: white transparent transparent;
+}
+
+/* tooltip title */
+.tooltip-title {
+  font-family: 'BreeSerif';
+  font-size: 14px;
+  line-height: 75%;
+}
+
+/* tooltip values */
+.tooltip-value {
+  text-indent: "3em";
+  color: #0f6bff;
+}
+
+/* vibration animation attributes  */
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
